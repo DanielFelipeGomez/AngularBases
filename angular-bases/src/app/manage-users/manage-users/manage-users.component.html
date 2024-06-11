@@ -1,0 +1,13 @@
+
+<h1>Bienvenido este es el ManageUsers</h1>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }} - {{ user.email}}
+  </li>
+</ul>
+
+<form (ngSubmit)="addUser($event)">
+  <input type="text" #name>
+  <button type="submit">Add user</button>
+</form>
